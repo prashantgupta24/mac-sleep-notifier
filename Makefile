@@ -1,2 +1,7 @@
-build:
-	go build -o ./bin/sleep-notifier && ./bin/sleep-notifier 
+all: build
+
+build: clean
+	go build -o ./bin/sleep-notifier ./notifier/*.go && ./bin/sleep-notifier
+
+clean:
+	rm -rf ./bin
