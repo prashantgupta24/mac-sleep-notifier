@@ -20,30 +20,30 @@ CFRunLoopRef runLoop;
 
 void MySleepCallBack(void *refCon, io_service_t service, natural_t messageType, void *messageArgument)
 {
-    printf("messageType %08lx, arg %08lx\n",
-           (long unsigned int)messageType,
-           (long unsigned int)messageArgument);
+    // printf("messageType %08lx, arg %08lx\n",
+    //        (long unsigned int)messageType,
+    //        (long unsigned int)messageArgument);
     switch (messageType)
     {
     case kIOMessageCanSystemSleep:
         if (CanSleep())
         {
+            //printf("can sleep");
             IOAllowPowerChange(root_port, (long)messageArgument);
         }
         else
         {
             IOCancelPowerChange(root_port, (long)messageArgument);
         }
-
         break;
     case kIOMessageSystemWillSleep:
         WillSleep();
-        printf("sleeppingg");
+        //printf("sleeping");
         IOAllowPowerChange(root_port, (long)messageArgument);
         break;
     case kIOMessageSystemWillPowerOn:
         WillWake();
-        printf("powering on");
+        //printf("powering on");
         break;
     case kIOMessageSystemHasPoweredOn:
         break;
