@@ -10,16 +10,16 @@ This libary notifies through a channel whenever your machine is put to sleep or 
 
 ## Usage
 
-```
-	notifierCh := GetInstance().Start()
+```go
+	notifierCh := notifier.GetInstance().Start()
 
 	for {
 		select {
 		case activity := <-notifierCh:
-			if activity.Type == Awake {
+			if activity.Type == notifier.Awake {
 				log.Println("machine awake")
 			} else {
-				if activity.Type == Sleep {
+				if activity.Type == notifier.Sleep {
 					log.Println("machine sleeping")
 				}
 			}
