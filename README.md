@@ -26,3 +26,5 @@ for {
 	}
 }
 ```
+## Example
+See example [here](https://github.com/prashantgupta24/mac-sleep-notifier/blob/master/example/example.go)
