@@ -1,4 +1,4 @@
-package main
+package notifier
 
 //Notifier notifies about the sleep/wake events
 type Notifier struct {

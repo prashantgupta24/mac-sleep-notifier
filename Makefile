@@ -1,7 +1,4 @@
-all: build
+all: example-start
 
-build: clean
-	go build -o ./bin/sleep-notifier ./notifier/*.go && ./bin/sleep-notifier
-
-clean:
-	rm -rf ./bin
+example-start:
+	go run example/example.go

@@ -1,4 +1,4 @@
-package main
+package notifier
 
 // #cgo LDFLAGS: -framework CoreFoundation -framework IOKit
 // int CanSleep();
