@@ -11,18 +11,20 @@ This libary notifies through a channel whenever your machine is put to sleep or 
 ## Usage
 
 ```go
-	notifierCh := notifier.GetInstance().Start()
+notifierCh := notifier.GetInstance().Start()
 
-	for {
-		select {
-		case activity := <-notifierCh:
-			if activity.Type == notifier.Awake {
-				log.Println("machine awake")
-			} else {
-				if activity.Type == notifier.Sleep {
-					log.Println("machine sleeping")
-				}
+for {
+	select {
+	case activity := <-notifierCh:
+		if activity.Type == notifier.Awake {
+			log.Println("machine awake")
+		} else {
+			if activity.Type == notifier.Sleep {
+				log.Println("machine sleeping")
 			}
 		}
 	}
+}
 ```
+## Example
+See example [here](https://github.com/prashantgupta24/mac-sleep-notifier/blob/master/example/example.go)
