@@ -14,7 +14,7 @@ func main() {
 		select {
 		case activity := <-notifierCh:
 			if activity.Type == notifier.Awake {
-				log.Println("machine awake")
+			    log.Println("machine awake")
 			} else {
 			    if activity.Type == notifier.Sleep {
 				log.Println("machine sleeping")
