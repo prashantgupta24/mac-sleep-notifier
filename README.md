@@ -1,4 +1,4 @@
-[![godoc-badge][godoc-badge]][godoc-link]
+[![version][version-badge]][RELEASES] [![godoc-badge][godoc-badge]][godoc-link]
 
 ## macOS Sleep/ Wake notifications in golang
 
@@ -33,3 +33,6 @@ See example [here](https://github.com/prashantgupta24/mac-sleep-notifier/blob/ma
 
 [godoc-badge]: https://img.shields.io/badge/godoc-reference-blue.svg
 [godoc-link]: https://godoc.org/github.com/prashantgupta24/mac-sleep-notifier/notifier
+
+[version-badge]: https://img.shields.io/github/release/prashantgupta24/mac-sleep-notifier.svg
+[RELEASES]: https://github.com/prashantgupta24/mac-sleep-notifier/releases
