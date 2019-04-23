@@ -1,3 +1,5 @@
+[![godoc-badge][godoc-badge]][godoc-link]
+
 ## macOS Sleep/ Wake notifications in golang
 
 Inspired from [this](https://nicolai86.eu/blog/2017/12/sleep-wake-notifications-in-go/) blog.
@@ -28,3 +30,6 @@ for {
 ```
 ## Example
 See example [here](https://github.com/prashantgupta24/mac-sleep-notifier/blob/master/example/example.go)
+
+[godoc-badge]: https://img.shields.io/badge/godoc-reference-blue.svg
+[godoc-link]: https://godoc.org/github.com/prashantgupta24/mac-sleep-notifier/notifier
