@@ -6,7 +6,7 @@ This libary notifies through a channel whenever your machine is put to sleep or 
 
 ## Installation
 
-`go get -u github.com/prashantgupta24/mac-sleep-notifier`
+`go get -u github.com/prashantgupta24/mac-sleep-notifier/notifier`
 
 ## Usage
 

@@ -5,6 +5,7 @@ import "log"
 var instance *Notifier
 var notifierCh chan *Activity
 
+//GetInstance gets the singleton instance for the notifier
 func GetInstance() *Notifier {
 	if instance == nil {
 		instance = &Notifier{}
@@ -12,6 +13,8 @@ func GetInstance() *Notifier {
 	return instance
 }
 
+//Start the notifier. It returns an Activity channel
+//to listen for machine sleep/wake activities.
 func (n *Notifier) Start() chan *Activity {
 
 	n.quit = make(chan struct{})
@@ -32,6 +35,7 @@ func (n *Notifier) Start() chan *Activity {
 	return notifierCh
 }
 
+//Quit the notifier
 func (n *Notifier) Quit() {
 	n.quit <- struct{}{}
 }
