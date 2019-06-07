@@ -4,7 +4,7 @@ the Start() function will get you a channel on which you receive both "Sleep" an
 
 Installation
 
-The libary can be installed using:
+The library can be installed using:
 
  go get -u github.com/prashantgupta24/mac-sleep-notifier/notifier
 
