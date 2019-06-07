@@ -1,1 +1,7 @@
 /bin
+
+# coverage
+*.html
+*.out
+
+vendor/
