@@ -1,8 +1,12 @@
 package notifier
 
+import "sync"
+
 //Notifier notifies about the sleep/wake events
 type Notifier struct {
-	quit chan struct{}
+	quit      chan struct{}
+	mutex     sync.RWMutex
+	isRunning bool
 }
 
 //Type determines if it is a sleep or an awake type activity
