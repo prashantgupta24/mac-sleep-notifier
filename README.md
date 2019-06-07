@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/prashantgupta24/mac-sleep-notifier)](https://goreportcard.com/report/github.com/prashantgupta24/mac-sleep-notifier) [![version][version-badge]][RELEASES] [![godoc-badge][godoc-badge]][godoc-link]
+[![Go Report Card](https://goreportcard.com/badge/github.com/prashantgupta24/mac-sleep-notifier)](https://goreportcard.com/report/github.com/prashantgupta24/mac-sleep-notifier) [![codecov](https://codecov.io/gh/prashantgupta24/mac-sleep-notifier/branch/master/graph/badge.svg)](https://codecov.io/gh/prashantgupta24/mac-sleep-notifier) [![version][version-badge]][RELEASES] [![godoc-badge][godoc-badge]][godoc-link]
 
 ## macOS Sleep/ Wake notifications in golang
 
